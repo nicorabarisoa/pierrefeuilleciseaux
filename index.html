@@ -1,19 +1,25 @@
 <html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
   <body>
     <div class="title"><h1>Pierre papier ciseaux</h1>
     </div>
     <div>
       <div class="scot">Score</div>
       <div class="score">
-        <div class="sco1">Joueur : 0</div>
-        <div class="sco2">Ordinateur: 0</div>    
+        <div class="sco1" id="js">Joueur : 0</div>
+        <div class="sco2" id="os">Ordinateur: 0</div>    
       </div>
     </div>
     <div class="main">
-      <div class="bouton" id="p">Pierre</div>
-      <div class="bouton" id="p1">Papier</div>
-      <div class="bouton"id="c">ciseaux</div>
+      <div class="bouton" id="p" onclick=play("pierre")>Pierre</div>
+      <div class="bouton" id="p1"onclick=play("papier")>Papier</div>
+      <div class="bouton"id="c" onclick=play("ciseaux")>ciseaux</div>
+    </div>
+    <div id="status">
     </div>
     
   </body>
+  <script src="script.js"></script>
 </html>
